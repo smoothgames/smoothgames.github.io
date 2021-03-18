@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <style>
+        ul li { margin-bottom: 20px; }
+        body {font-family: 'Cormorant Garamond', serif;}
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="mt-4 col-sm-12 col-md-12">
+                <div class="row">
+                    <div id="photo" class="col-sm-3 col-md-3">
+                        <img src="photos/smooth-game.jpeg" class="img-thumbnail w-100" alt="tatjana">
+                    </div>
+                    <div class="col-sm-9 col-md-9 d-flex align-items-end">
+                        <div>
+                            <h1> <b> <i style="color:darkblue;"> Smooth Games </i> <i> Reading Group </i> </b> </h1>
+                            <p class="lead"> <b> Started in October 2020. </b> <br>
+                                <b> EPFL </b>
+                                <a href="mailto:tatjana.chavdarova@epfl.ch" style="text-decoration:none;">
+                                    <span style="font: 80% Arial,sans-serif; color:#0783B6;">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope"
+                                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                        </svg>
+                                    </span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div class="">
+                    <hr>
+                    <!-- <p> Reading group on differentiable minmax optimization, at EPFL.
+                        <br>
+                    </p> -->
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div class="">
+                    <h3 class="mt-5">Topics of Interest</h3>
+                    <p>
+                        Differentiable games / Minmax optimization / 2-player games
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <div class="">
+                    <h3 class="mt-5">Internal Presentations <span>&#38;</span> Invited Talks<a href="#footnote-1"><span>&#42;</span></a> </h3>
+                    <ul style="padding-bottom: 0.25em;">
+                      <li> <i> Intro I: General problem <span>&#38;</span> colab playlab. </i>
+                        <a href="https://scholar.google.ca/citations?user=76HdZDQAAAAJ&hl=de&oi=ao">Tatjana Chavdarova</a> and
+                        <a href="https://scholar.google.ca/citations?user=FXacC3oAAAAJ&hl=de&oi=ao">Matteo Pagliardini</a>, EPFL.
+                        <i style="color:gray;"> 05.10.2020. </i>
+                        <a href="https://drive.google.com/file/d/1Ie1dK3FAlt7OiWZRNlgnUresrXldt-vI/view?usp=sharing"><i>slides</i></a>,
+                        <a href="https://colab.research.google.com/drive/1CUgnk-ERUF6mUe1UpzMo9LBUq7ewf1YR?usp=sharing"><i>colab</i></a>.
+                      </li>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsMechanics"> <i> Intro II: How minmax differs from minimization? </i>
+                        <a href="https://scholar.google.ca/citations?user=l99LRFkAAAAJ&hl=de&oi=ao">Thomas Pethick</a>, EPFL.
+                        (paper covered:  <a href="https://arxiv.org/pdf/1802.05642.pdf"><i>The Mechanics of n-Player Differentiable Games</i></a>)
+                        <i style="color:gray;"> 12.10.2020. </i>
+                        <a href=""><i>slides</i></a>.
+                        <i style="color:darkblue;"> Paper details <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsMechanics">
+                          <div class="card card-body">
+                            <p>
+                              <b><i>The Mechanics of n-Player Differentiable Games.</i></b>
+                              David Balduzzi, Sebastien Racaniere, James Martens,  Jakob Foerster,  Karl Tuyls, and Thore Graepel.
+                              ICML, 2018.
+                            </p>
+
+                            <p> <b> Abstract. </b> The cornerstone underpinning deep learning is the
+                                guarantee that gradient descent on an objective
+                                converges to local minima. Unfortunately, this
+                                guarantee fails in settings, such as generative adversarial nets, where there are multiple interacting
+                                losses. The behavior of gradient-based methods
+                                in games is not well understood<span>&#8213;</span>and is becoming
+                                increasingly important as adversarial and multiobjective architectures proliferate. In this paper,
+                                we develop new techniques to understand and control the dynamics in general games. The key result
+                                is to decompose the second-order dynamics into
+                                two components. The first is related to potential
+                                games, which reduce to gradient descent on an implicit function; the second relates to Hamiltonian
+                                games, a new class of games that obey a conservation law, akin to conservation laws in classical
+                                mechanical systems. The decomposition motivates Symplectic Gradient Adjustment (SGA), a
+                                new algorithm for finding stable fixed points in
+                                general games. Basic experiments show SGA is
+                                competitive with recently proposed algorithms for
+                                finding stable fixed points in GANs<span>&#8213;</span>whilst at
+                                the same time being applicable to<span>&#8213;</span>and having
+                                guarantees in<span>&#8213;</span>much more general games.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsLimits"> <i> The limits of min-max  optimization algorithms: convergence to spurious non-critical points</i>.
+                          <i style="color:gray;"> 19.10.2020 <span>&#38;</span>  26.10.2020. </i>
+                          <a href="https://inf.ethz.ch/people/people-atoz/person-detail.Mjg0MDU3.TGlzdC8zMDQsLTIxNDE4MTU0NjA=.html">Ya-Ping Hsieh</a>, ETH.
+                          <a href="https://arxiv.org/pdf/2006.09065.pdf"><i>paper</i></a>,
+                          <a href="https://drive.google.com/file/d/1JhPudZTpTWZWWO0DO4pfARTmKUsRAXcP/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Paper abstract <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsLimits">
+                          <div class="card card-body">
+                            <p>
+                              <b><i>The limits of min-max  optimization algorithms: convergence to spurious non-critical points.</i></b>
+                              Ya-Ping Hsieh, Panayotis Mertikopoulos, Volkan Cevher.
+                              ArXiv, 2020.
+                            </p>
+
+                            <p> <b> Abstract. </b> Compared to minimization problems, the min-max landscape in machine
+                              learning applications is considerably more convoluted because of the existence of cycles
+                              and similar phenomena. Such oscillatory behaviors are well-understood in the convex-concave regime,
+                              and many algorithms are known to overcome them. In this paper, we
+                              go beyond the convex-concave setting and we characterize the convergence properties of
+                              a wide class of zeroth-, first-, and (scalable) second-order methods in non-convex/non-concave problems.
+                              In particular, we show that these state-of-the-art min-max optimization
+                              algorithms may converge with arbitrarily high probability to attractors that are in no way
+                              min-max optimal or even stationary. Spurious convergence phenomena of this type can
+                              arise even in two-dimensional problems, a fact which corroborates the empirical evidence
+                              surrounding the formidable difficulty of training GANs.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsPPM"> <i>A Unified Analysis of Extra-gradient and Optimistic Gradient Methods for Saddle Point Problems: Proximal Point Approach</i>.
+                          <a href="https://scholar.google.ca/citations?user=76HdZDQAAAAJ&hl=de&oi=ao">Tatjana Chavdarova</a>, EPFL.
+                          <i style="color:gray;"> 02.11.2020. </i>
+                          <a href="https://arxiv.org/pdf/1901.08511.pdf"><i>paper covered</i></a>,
+                          <a href="https://drive.google.com/file/d/1dLpkCW6Ja5WRx2Blcc5-V51AZi8A4Ofj/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Paper details <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsPPM">
+                          <div class="card card-body">
+                            <p>
+                              <b><i>A Unified Analysis of Extra-gradient and Optimistic Gradient Methods for Saddle Point Problems: Proximal Point Approach.</i></b>
+                              Aryan Mokhtari, Asuman Ozdaglar, Sarath Pattathil.
+                              ArXiv, 2019.
+                            </p>
+
+                            <p> <b> Abstract. </b> In this paper we consider solving saddle point problems using two variants of Gradient Descent-Ascent algorithms, Extra-gradient (EG) and Optimistic Gradient Descent Ascent (OGDA) methods.
+                              We show that both of these algorithms admit a unified analysis as approximations of the classical proximal point method for solving saddle point problems.
+                              This viewpoint enables us to develop a new framework for analyzing EG and OGDA for bilinear and strongly convex-strongly concave settings.
+                              Moreover, we use the proximal point approximation interpretation to generalize the results for OGDA for a wide range of parameters.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsVI"> <i>Adversarial Example Games <span>&#38;</span>  VI perspective on GANs</i>.
+                          <a href="https://scholar.google.ca/citations?user=bDrXQPUAAAAJ&hl=de&oi=ao">Gauthier Gidel</a>, Mila.
+                          <i style="color:gray;"> 09.11.2020. </i>
+                          <i>Papers: </i><a href="https://proceedings.neurips.cc/paper/2020/file/65586803f1435736f42a541d3a924595-Paper.pdf">AEGs</a>  <span>&#38;</span> <a href="https://openreview.net/pdf?id=r1laEnA5Ym">VI perspective</a>,
+                          <a href="https://drive.google.com/file/d/199rZOR8nboDbYOx5ivNG6o7f__IV8ApW/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Abstract <span>&#38;</span> Bio <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsVI">
+                          <div class="card card-body">
+                            <p> <b> Abstract. </b> Game-theoretic formulation of machine learning tasks has now great success in the past couple of years.
+                              In this talk, I will first introduce Adversarial Example Games (AEG), a framework that models the crafting of adversarial examples as a min-max game between a generator of attacks and a classifier.
+                              Then I will present a Variational Inequality perspective on the optimization of GAN and AEG.
+                            </p>
+                            <p> <b> Bio. </b> Gauthier Gidel is an assistant professor at Universit<span>&#233;</span> de Montr<span>&#233;</span>al (UdeM) at DIRO and a core faculty member of Mila.
+                              He is a recipient of the 2019 Borealis graduate fellowship program.
+                              He is broadly interested in the theoretical understanding of learning (such as generalization in deep learning) and game formulations of ML tasks such as GANs and adversarial examples.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsLandscape"> <i>A Closer Look at the Optimization Landscapes of GANs</i>.
+                          <a href="https://scholar.google.ca/citations?user=P5d_140AAAAJ&hl=de&oi=ao">Hugo Berard</a>, Mila.
+                          <i style="color:gray;"> 16.11.2020. </i>
+                          <a href="https://openreview.net/forum?id=HJeVnCEKwH"><i>paper</i></a>,
+                          <a href="https://drive.google.com/file/d/1CxP7y6Kf8KT-tSCU9mWKVyznjxafysaf/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Abstract <span>&#38;</span> Bio <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsLandscape">
+                          <div class="card card-body">
+                            <p> <b> Abstract. </b> Theory on smooth games optimization often relies on assumptions that do not hold when the players are parametrized as deep neural networks and have non-convex loss functions. In particular, theoretical works highlight several limitations of <span>&#8220;</span>standard<span>&#8221;</span> methods (i.e. GDA) for solving games, however those methods are still widely used in practice with great success (e.g. GANs).
+                              This talk will try to investigate this gap between theory and practice in the context of GANs, by attempting to answer the following questions: <span>&#8220;</span>Do GANs actually suffer from rotational dynamics? And do they converge to Local Nash Equilibrium?<span>&#8221;</span>.
+                              To do so Hugo will introduce several visualization tools that can be useful to diagnose optimization problems that might arise in games.
+                            </p>
+                            <p> <b> Bio. </b> Hugo Berard is a PhD student at Mila and Facebook AI Research under the supervision of Pascal Vincent. His work lies at the intersection of Games and Deep Learning where he tries to understand the optimization challenges that arise in games.
+                              Recently, he has been interested in finding connections between games and different fields of machine learning, by formulating machine learning problems as smooth games and deriving new algorithms to solve them.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsLEAD"> <i>LEAD: Least-Action Dynamics for Min-Max Optimization</i>.
+                          <a href="https://scholar.google.ca/citations?user=5t_-enoAAAAJ&hl=de&oi=ao">Reyhane Hemmat</a>, Mila.
+                          <i style="color:gray;"> 23.11.2020. </i>
+                          <a href="https://arxiv.org/pdf/2010.13846.pdf"><i>paper</i></a>,
+                          <a href="https://drive.google.com/file/d/1AMIK_13JDNErcplmUhw0NLSJZgvfrFkP/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Abstract <span>&#38;</span> Bio <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsLEAD">
+                          <div class="card card-body">
+                            <p> <b> Abstract. </b> Existing optimization methods for two-player min-max games typically employ intuitive, carefully hand-designed mechanisms for controlling the problematic rotational dynamics commonly encountered during optimization. In this work, we take a novel approach to address this issue by casting min-max optimization as a physical system. We propose LEAD (Least-Action Dynamics), which uses the principle of least-action from physics to discover an efficient optimizer for min-max games. We provide theoretical and empirical analysis that demonstrate the strong performance of our method.
+                            </p>
+                            <p> <b> Bio. </b> Reyhane is a PhD student at Mila lab, Université de Montréal. She works under the supervision of Ioannis Mitliagkas and Nicolas Le Roux. Her research interests are in the intersection of machine learning, large scale optimization, and game theory.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsSHGM"> <i>Stochastic Hamiltonian Gradient Methods for Smooth Games</i>.
+                          <a href="https://scholar.google.ca/citations?user=mvDmzAQAAAAJ&hl=de&oi=ao">Nicolas Loizou</a>, Mila.
+                          <i style="color:gray;"> 30.11.2020. </i>
+                          <a href="http://proceedings.mlr.press/v119/loizou20a/loizou20a.pdf"><i>paper</i></a>,
+                          <a href="https://drive.google.com/file/d/1hvteAFnhIemV2LFrXVGYgG4m5V2uQ3lz/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Abstract <span>&#38;</span> Bio <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsSHGM">
+                          <div class="card card-body">
+                            <p> <b> Abstract. </b> The success of adversarial formulations in machine learning has brought renewed motivation for smooth games.
+                              In this work, we focus on the class of stochastic Hamiltonian methods and provide the first convergence guarantees for certain classes of stochastic smooth games.
+                              We propose a novel unbiased estimator for the stochastic Hamiltonian gradient descent (SHGD) and highlight its benefits.
+                              Using tools from the optimization literature we show that SHGD converges linearly to the neighborhood of a stationary point.
+                              To guarantee convergence to the exact solution, we analyze SHGD with a decreasing step-size and we also present the first stochastic variance reduced Hamiltonian method.
+                              Our results provide the first global non-asymptotic last-iterate convergence guarantees for the class of stochastic unconstrained bilinear games and for the more general class of stochastic games that satisfy a <span>&#8220;</span>sufficiently bilinear<span>&#8221;</span> condition, notably including some non-convex non-concave problems.
+                              We supplement our analysis with experiments on stochastic bilinear and sufficiently bilinear games, where our theory is shown to be tight, and on simple adversarial machine learning formulations.
+                            </p>
+                            <p> <b> Bio. </b> Nicolas Loizou is an IVADO Post-doctoral Research Fellow at Mila - Quebec Artificial Intelligence Institute and the Department of Computer Science and Operations Research (DIRO), Universit<span>&#233;</span> de Montr<span>&#233;</span>al.
+                              Before joining Mila, he was a graduate student at The University of Edinburgh, School of Mathematics where he received his Ph.D. degree in Optimization and Operational Research in 2019.
+                              Nicolas's current research focuses on the theory and applications of convex and non-convex optimization in large-scale machine learning and data science problems.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsComplexity"> <i>The Complexity of Constrained Min-Max Optimization</i>.
+                          <a href="https://mzampet.com/">Manolis Zampetakis</a>, UC Berkeley.
+                          <i style="color:gray;"> 14.12.2020. </i>
+                          <a href="https://arxiv.org/pdf/2009.09623.pdf"><i>paper</i></a>,
+                          <a href="https://drive.google.com/file/d/1nxA6fTCxe2ys8KAwqlI-5XsNXvHdyJqZ/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Abstract <span>&#38;</span> Bio <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsComplexity">
+                          <div class="card card-body">
+                            <p> <b> Abstract. </b> In multi-agent learning applications, the role of single-objective optimization is played by equilibrium computation, yet our understanding of its complexity in settings that are relevant for Deep Learning remains sparse. In this talk, we focus on min-max optimization of nonconvex-nonconcave objectives, which has found applications in GANs, and other adversarial learning problems. Here, not only are there no known gradient-descent based methods converging to even local and approximate min-max equilibria, but the computational complexity of identifying them remains poorly understood. We show that finding approximate local min-max equilibria of Lipschitz and smooth objectives requires a number of queries to the function and its gradient that is exponential in the relevant parameters, in sharp contrast to the polynomial number of queries required to find approximate local minima of non-convex objectives. Our oracle lower bound is a byproduct of a complexity-theoretic result showing that finding approximate local min-max equilibria is computationally equivalent to finding Brouwer fixed points, and Nash equilibria in non zero-sum games, and thus PPAD-complete. Minimal complexity theory knowledge will be assumed in the talk.
+                            </p>
+                            <p> <b> Bio. </b> Manolis Zampetakis is a postdoc at the Department of Electrical Engineering and Computer Science at the University of California at Berkeley working with Michael Jordan. Before Berkeley, he completed his PhD at the Department of Electrical Engineering and Computer Science at Massachusetts Institute of Technology (MIT) under the supervision of Constantinos Daskalakis. He has completed his undergraduate studies at NTUA. During his graduate studies has been awarded the Google PhD Fellowship.
+                            </p>
+                          </div>
+                      </div>
+                      <li data-toggle="collapse" href="#collapsePaperDetailsLip"> <i>Lipschitz Generative Adversarial Nets</i>.
+                          <a href="https://scholar.google.ca/citations?user=rLQIkUsAAAAJ&hl=en&oi=ao">Igor Krawczuk</a>, EPFL.
+                          <i style="color:gray;"> 21.12.2020. </i>
+                          <a href="https://arxiv.org/pdf/1902.05687.pdf"><i>paper covered</i></a>,
+                          <a href="https://drive.google.com/file/d/1VgPBpAKuBldOOQ1SxWdLkwJ1vAXW8yh7/view?usp=sharing"><i>slides</i></a>.
+                          <i style="color:darkblue;"> Paper details <span>&#8628;</span> </i>
+                      </li>
+                      <div class="collapse" id="collapsePaperDetailsLip">
+                          <div class="card card-body">
+                            <p>
+                              <b><i>Lipschitz Generative Adversarial Nets.</i></b>
+                              Zhiming Zhou, Jiadong Liang, Yuxuan Song, Lantao Yu, Hongwei Wang, Weinan Zhang, Yong Yu, Zhihua Zhang.
+                              ICML, 2019.
+                            </p>
+
+                            <p> <b> Abstract. </b> In this paper, we study the convergence of generative adversarial networks (GANs) from the perspective of the informativeness of the gradient of the optimal discriminative function.
+                              We show that GANs without restriction on the discriminative function space commonly suffer from the problem that the gradient produced by the discriminator is uninformative to guide the generator.
+                              By contrast, Wasserstein GAN (WGAN), where the discriminative function is restricted to 1-Lipschitz, does not suffer from such a gradient uninformativeness problem.
+                              We further show in the paper that the model with a compact dual form of Wasserstein distance, where the Lipschitz condition is relaxed, may also theoretically suffer from this issue.
+                              This implies the importance of Lipschitz condition and motivates us to study the general formulation of GANs with Lipschitz constraint, which leads to a new family of GANs that we call Lipschitz GANs (LGANs).
+                              We show that LGANs guarantee the existence and uniqueness of the optimal discriminative function as well as the existence of a unique Nash equilibrium.
+                              We prove that LGANs are generally capable of eliminating the gradient uninformativeness problem.
+                              According to our empirical analysis, LGANs are more stable and generate consistently higher quality samples compared with WGAN.
+                            </p>
+                          </div>
+                      </div>
+                      <!-- <li> <i>Title</i>.
+                          <a href="https://">Presenter</a>, Affiliation.
+                          <i style="color:gray;"> 19.10.2020. </i>
+                          <a href="https://"><i>paper</i></a>,
+                          <a href="https://"><i>slides</i></a>.
+                      </li> -->
+                    </ul>
+                    <p> Recordings are available for internal EPFL members only and for a limited time (use above email to request).  </p>
+                    <p id="footnote-covered"><span>&#42;</span> <small> <i>Paper covered</i> denotes that a member of our reading group presented a paper which (s)he did not (co)author. Where omitted a (co)author of the listed paper is the presenter.</small></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="mt-auto" style="height: 30px;">
+        <p class="text-center">&copy; 2021</p>
+    </footer>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
